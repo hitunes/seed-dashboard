@@ -6,14 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Seedstar App</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/css/main.css">
 </head>
 
 <body>
-    <nav>
-        <span>side</span>
-        <span class="title">Dashboard</span>
-    </nav>
+    <header>
+        <!-- navbar lives here  -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+            <span class="nav-title">Dashboard</span>
+        </nav>
+    </header>
     <main>
+        <aside class="aside__left">
+            <ul class="aside__menuList">
+                <li class="aside__items">
+                    <a href="" class="aside__links d-flex">
+                        <i class="icon-chart aside__icons"></i>
+                        <p class="aside__text" data-step="1" data-intro="This is a tooltip!">Dashboard</p>
+                    </a>
+                </li>
+                <li class="aside__items">
+                    <a href="#" class="aside__links d-flex" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+                        <i class="icon-chart aside__icons"></i>
+                        <p class="aside__text">Profile</p>
+                    </a>
+                    <ul class="collapse multi-collapse aside__collapse" id="collapseExample">
+                        <li class="aside__items">
+                            <a href="#" class="aside__links d-flex">
+                                <i class="icon-chart aside__icons"></i>
+                                <p class="aside__text">Profile 1</p>
+                            </a>
+                        </li>
+                        <li class="aside__items">
+                            <a href="#" class="aside__links d-flex">
+                                <i class="icon-chart aside__icons"></i>
+                                <p class="aside__text">Profile 2</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="aside__items">
+                    <a href="" class="aside__links d-flex">
+                        <i class="icon-chart aside__icons"></i>
+                        <p class="aside__text">Chart</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
         <div class="balance">
             <span class="balance-title">
         Balance
@@ -33,13 +76,58 @@
                 Latest Transactions
             </h5>
             <div class="transaction-latest">
-                <div>
-                    <span class="transaction-center">ATM LAGOS</span>
-                    <span class="transaction-time">Today</span>
+                <div class="transaction-wrapper">
+                    <div>
+                        <span class="transaction-center">ATM LAGOS</span>
+                        <span class="transaction-time">Today</span>
+                    </div>
+                    <div>
+                        <span class="transaction-amount red">-N 450.00</span>
+                        <span class="transaction-type">Bank Withdraw</span>
+                    </div>
+                </div>
+                <div class="transaction-wrapper">
+                    <div>
+                        <span class="transaction-center">ATM LAGOS</span>
+                        <span class="transaction-time">Yesterday</span>
+                    </div>
+                    <div>
+                        <span class="transaction-amount green">+ N 450.00</span>
+                        <span class="transaction-type">Bank Withdraw</span>
+                    </div>
+                </div>
+                <div class="transaction-wrapper">
+                    <div>
+                        <span class="transaction-center">003 645 6548 65</span>
+                        <span class="transaction-time">01/06/2015</span>
+                    </div>
+                    <div>
+                        <span class="transaction-amount red">-100 SP</span>
+                        <span class="transaction-type">Airtime recharge</span>
+                    </div>
+                </div>
+                <div class="transaction-wrapper">
+                    <div>
+                        <span class="transaction-center">John Doe</span>
+                        <span class="transaction-time">31/05/2015</span>
+                    </div>
+                    <div>
+                        <span class="transaction-amount green">+ N 450.00</span>
+                        <span class="transaction-type">Transfer</span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState === 'complete') {
+                app.asideController();
+            }
+        };
+    </script>
 </body>
 
 </html>
