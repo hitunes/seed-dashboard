@@ -11,116 +11,147 @@
 </head>
 
 <body>
-    <header>
-        <!-- navbar lives here  -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-            <span class="nav-title">Dashboard</span>
-        </nav>
-    </header>
-    <main>
-        <aside class="aside__left">
-            <ul class="aside__menuList">
-                <li class="aside__items">
-                    <a href="" class="aside__links d-flex">
-                        <i class="icon-chart aside__icons"></i>
-                        <p class="aside__text" data-step="1" data-intro="This is a tooltip!">Dashboard</p>
-                    </a>
-                </li>
-                <li class="aside__items">
-                    <a href="#" class="aside__links d-flex" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
-                        <i class="icon-chart aside__icons"></i>
-                        <p class="aside__text">Profile</p>
-                    </a>
-                    <ul class="collapse multi-collapse aside__collapse" id="collapseExample">
-                        <li class="aside__items">
-                            <a href="#" class="aside__links d-flex">
-                                <i class="icon-chart aside__icons"></i>
-                                <p class="aside__text">Profile 1</p>
-                            </a>
-                        </li>
-                        <li class="aside__items">
-                            <a href="#" class="aside__links d-flex">
-                                <i class="icon-chart aside__icons"></i>
-                                <p class="aside__text">Profile 2</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="aside__items">
-                    <a href="" class="aside__links d-flex">
-                        <i class="icon-chart aside__icons"></i>
-                        <p class="aside__text">Chart</p>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <div class="balance">
-            <span class="balance-title">
-        Balance
-      </span>
-            <span class="balance-value">
-        N 979153.36
-      </span>
-            <span class="balance-point">
-        16.500 SP
-      </span>
-            <span class="balance-slider">
-        a b
-      </span>
-        </div>
-        <div class="transaction">
-            <h5 class="transaction-title">
-                Latest Transactions
-            </h5>
-            <div class="transaction-latest">
-                <div class="transaction-wrapper">
-                    <div>
-                        <span class="transaction-center">ATM LAGOS</span>
-                        <span class="transaction-time">Today</span>
-                    </div>
-                    <div>
-                        <span class="transaction-amount red">-N 450.00</span>
-                        <span class="transaction-type">Bank Withdraw</span>
-                    </div>
+    <div class="wrapper">
+        <header>
+            <!-- navbar lives here  -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <span class="nav-title">Dashboard</span>
+            </nav>
+        </header>
+        <main>
+            <aside class="aside__left">
+                <div class="aside-bg">
+                    <span>John Doe</span>
                 </div>
-                <div class="transaction-wrapper">
-                    <div>
-                        <span class="transaction-center">ATM LAGOS</span>
-                        <span class="transaction-time">Yesterday</span>
-                    </div>
-                    <div>
-                        <span class="transaction-amount green">+ N 450.00</span>
-                        <span class="transaction-type">Bank Withdraw</span>
-                    </div>
+                <ul class="aside__menuList">
+                    <li class="aside__items">
+                        <a href="" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-dashboard.svg" alt="">
+                            <p class="aside__text">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="aside__items">
+                        <a href="#" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-accounts.svg" alt="">
+                            <p class="aside__text">Accounts</p>
+                        </a>
+                    </li>
+                    <li class="aside__items aside__items-active">
+                        <a href="" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-cards.svg" alt="">
+                            <p class="aside__text">Cards</p>
+                        </a>
+                    </li>
+                    <li class="aside__items">
+                        <a href="" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-payments.svg" alt="">
+                            <p class="aside__text">Payments</p>
+                        </a>
+                    </li>
+                    <li class="aside__items">
+                        <a href="#" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-transfers.svg" alt="">
+                            <p class="aside__text">Transfers</p>
+                        </a>
+                    </li>
+                    <li class="aside__items">
+                        <a href="" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-airtime.svg" alt="">
+                            <p class="aside__text">Airtime</p>
+                        </a>
+                    </li>
+                    <li class="aside__items">
+                        <a href="" class="aside__links">
+                            <img src="/Assets//Images/Side Menu/ic-settings.svg" alt="">
+                            <p class="aside__text">Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="main-section">
+                <div class="balance">
+                    <span class="balance-title">
+            Balance
+          </span>
+                    <span class="balance-value">
+            <strong>N 979153.36</strong>
+          </span>
+                    <span class="balance-point">
+            <strong>16.500 SP</strong>
+          </span>
+                    <span class="balance-slider">
+            <span>a</span>
+                    <span>b</span>
+                    </span>
                 </div>
-                <div class="transaction-wrapper">
-                    <div>
-                        <span class="transaction-center">003 645 6548 65</span>
-                        <span class="transaction-time">01/06/2015</span>
+                <div class="transaction">
+                    <div class="transaction-title-wrap">
+                        <h5 class="transaction-title">
+                            Latest Transactions
+                        </h5>
                     </div>
-                    <div>
-                        <span class="transaction-amount red">-100 SP</span>
-                        <span class="transaction-type">Airtime recharge</span>
-                    </div>
-                </div>
-                <div class="transaction-wrapper">
-                    <div>
-                        <span class="transaction-center">John Doe</span>
-                        <span class="transaction-time">31/05/2015</span>
-                    </div>
-                    <div>
-                        <span class="transaction-amount green">+ N 450.00</span>
-                        <span class="transaction-type">Transfer</span>
+                    <div class="transaction-latest">
+                        <div class="transaction-wrapper">
+                            <div>
+                                <span class="transaction-center">ATM LAGOS</span>
+                                <span class="transaction-time">Today</span>
+                            </div>
+                            <div>
+                                <span class="transaction-amount red">-N 450.00</span>
+                                <span class="transaction-type">Bank Withdraw</span>
+                            </div>
+                        </div>
+                        <div class="transaction-wrapper">
+                            <div>
+                                <span class="transaction-center">ATM LAGOS</span>
+                                <span class="transaction-time">Yesterday</span>
+                            </div>
+                            <div>
+                                <span class="transaction-amount green">+ N 450.00</span>
+                                <span class="transaction-type">Bank Withdraw</span>
+                            </div>
+                        </div>
+                        <div class="transaction-wrapper">
+                            <div>
+                                <span class="transaction-center">003 645 6548 65</span>
+                                <span class="transaction-time">01/06/2015</span>
+                            </div>
+                            <div>
+                                <span class="transaction-amount red">-100 SP</span>
+                                <span class="transaction-type">Airtime recharge</span>
+                            </div>
+                        </div>
+                        <div class="transaction-wrapper">
+                            <div>
+                                <span class="transaction-center">John Doe</span>
+                                <span class="transaction-time">31/05/2015</span>
+                            </div>
+                            <div>
+                                <span class="transaction-amount green">+ N 450.00</span>
+                                <span class="transaction-type">Transfer</span>
+                            </div>
+                        </div>
+                        <div class="transaction-wrapper">
+                            <div>
+                                <span class="transaction-center">003 645 6548 65</span>
+                                <span class="transaction-time">01/06/2015</span>
+                            </div>
+                            <div>
+                                <span class="transaction-amount red">-100 SP</span>
+                                <span class="transaction-type">Airtime recharge</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+
+        </main>
+    </div>
+    <script src="Assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Assets/js/main.js"></script>
     <script>
         document.onreadystatechange = function() {
             if (document.readyState === 'complete') {
