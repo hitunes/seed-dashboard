@@ -89,13 +89,7 @@ nav {
 
 .aside__new {
     top: 0;
-    display: none;
-}
-
-@media (max-width: 991px) {
-    .aside__new {
-        display: block;
-    }
+    display: block;
 }
 
 .aside-bg {
